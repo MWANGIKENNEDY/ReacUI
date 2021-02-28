@@ -1,17 +1,34 @@
+import React from 'react';
 
-import Navigation from './components/Navigation/Navigationbar';
-import Content from './components/Body/Body';
+import AppLayout from './components/AppLayout';
+import SideNav from './components/SideNav';
+import NavBar from './components/NavBar';
+import TestComponent from './components/TestComponent';
+import MtKenya from './components/MtkenyaCoast';
+import NairobiEast from './components/NairobiEast';
+import NairobiWest from './components/NairobiWest';
+import RiftWestern from './components/RiftWestern';
 
 function App() {
   return (
+    <AppLayout>
 
-<div>
-<Navigation></Navigation>
+      <NavBar></NavBar>
 
-<Content></Content>
+<SideNav>
+  hfhfh
+</SideNav>
+<TestComponent>
 
-</div>
+  <MtKenya>
+    Mt Kenya
+  </MtKenya>
+  <NairobiEast>Nairobi East</NairobiEast>
+  <NairobiWest>Nairobi West</NairobiWest>
+  <RiftWestern>Rift / Western</RiftWestern>
 
+</TestComponent>
+    </AppLayout>
   );
 }
 
