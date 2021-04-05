@@ -1,11 +1,32 @@
-import styled from 'styled-components';
+import React from 'react';
 
-export default styled.div`
-position:fixed;
-top:9vh;
-overflow-x:hidden;
-height:100%;
-width:20vw;
-background-color:yellow;
-color:black ;
-`;
+function SideNav(props) {
+    return (
+        <nav className="sidenav">
+            <div className="sidenav-header"></div>
+            <div className="sidenav-menu">
+<ul>
+    <li><a>
+    <span class="pi pi-home"></span>
+        <span>Home</span></a></li>
+
+        <li><a>
+        <span class="pi pi-user"></span>
+        <span>Admin</span></a></li>
+
+        <li><a>
+        <span class="pi pi-facebook"></span>
+        <span>Dashboard</span></a>
+        </li>
+
+        <li><a>
+        <span class="pi pi-power-off"></span>
+        <span>Sign-out</span></a>
+        </li>
+</ul>
+            </div>
+        </nav>
+    );
+}
+
+export default SideNav;
